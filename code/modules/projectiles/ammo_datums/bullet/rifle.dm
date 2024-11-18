@@ -35,7 +35,7 @@
 	bullet_color = COLOR_SOFT_RED //Red bullets to indicate friendly fire restriction
 	hud_state = "smartgun"
 	hud_state_empty = "smartgun_empty"
-	flags_ammo_behavior = AMMO_BALLISTIC
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_IFF
 	accurate_range = 20
 	damage = 20
 	penetration = 25
@@ -217,7 +217,7 @@
 	bullet_color = COLOR_SOFT_RED //Red bullets to indicate friendly fire restriction
 	hud_state = "smartgun"
 	hud_state_empty = "smartgun_empty"
-	flags_ammo_behavior = AMMO_BALLISTIC
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_IFF
 	damage = 40
 	max_range = 40
 	penetration = 17.5
