@@ -683,6 +683,10 @@
 /obj/item/storage/box/crate/sentry,
 /turf/open/floor/mainship/cargo,
 /area/shuttle/canterbury)
+"qp" = (
+/obj/item/supplytablet/crash,
+/turf/open/floor/mainship/blue/full,
+/area/shuttle/canterbury/cic)
 "qE" = (
 /obj/structure/bed/chair/dropship/passenger{
 	dir = 4
@@ -1444,7 +1448,7 @@ Uo
 Uo
 ad
 bH
-MY
+qp
 ao
 bD
 as
