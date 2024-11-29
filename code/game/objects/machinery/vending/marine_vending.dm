@@ -268,6 +268,8 @@
 			/obj/item/ammo_magazine/rifle/ar21 = -1,
 			/obj/item/ammo_magazine/rifle/ar21/ap = -1,
 			/obj/item/ammo_magazine/rifle/ar21/hp = -1,
+			/obj/item/weapon/gun/revolver/r44/coltrifle = -1,
+			/obj/item/ammo_magazine/revolver/rifle = -1,
 		),
 		"Пистолеты-пулемёты" = list(
 			/obj/item/weapon/gun/smg/vector = -1,
@@ -354,8 +356,8 @@
 			/obj/item/explosive/grenade/smokebomb/cloak = 25,
 			/obj/item/explosive/grenade/smokebomb/drain = 10,
 			/obj/item/explosive/grenade/mirage = 100,
-			/obj/item/storage/box/m94 = 200,
-			/obj/item/storage/box/m94/cas = 50,
+			/obj/item/storage/box/m94 = -1,
+			/obj/item/storage/box/m94/cas = -1,
 		),
 		"Специализированное" = list(
 			/obj/item/weapon/gun/rifle/pepperball = 4,
