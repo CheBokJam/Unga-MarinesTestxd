@@ -101,6 +101,24 @@
 		underlays -= holstered_item_underlay
 		QDEL_NULL(holstered_item_underlay)
 
+/obj/item/storage/holster/belt/pistol/verb/toggle_auto_catch()
+	set name = "Toggle Auto Catching Magazines"
+	set category = "Object"
+	auto_catch = !auto_catch
+	if(!auto_catch)
+		to_chat(usr, "Auto catching disabled.")
+	else
+		to_chat(usr, "Auto catching enabled.")
+
+/obj/item/storage/holster/belt/revolver/verb/toggle_auto_catch()
+	set name = "Toggle Auto Catching Speed Loaders"
+	set category = "Object"
+	auto_catch = !auto_catch
+	if(!auto_catch)
+		to_chat(usr, "Auto catching disabled.")
+	else
+		to_chat(usr, "Auto catching enabled.")
+
 /obj/item/storage/holster/do_quick_equip(mob/user) //Will only draw the specific holstered item, not ammo etc.
 	if(!holstered_item)
 		return FALSE
@@ -719,10 +737,13 @@
 /obj/item/storage/holster/belt/revolver
 	name = "generic revolver belt"
 	desc = "A revolver belt that is not a pistol belt"
+	flags_equip_slot = ITEM_SLOT_BELT|ITEM_SLOT_SUITSTORE
 
 /obj/item/storage/holster/belt/revolver/Initialize(mapload, ...)
 	. = ..()
 	AddComponent(/datum/component/tac_reload_storage)
+	AddComponent(/datum/component/magazine_catcher)
+	AddComponent(/datum/component/easy_restock)
 
 /obj/item/storage/holster/belt/revolver/t457
 	name = "\improper T457 pattern revolver holster rig"
