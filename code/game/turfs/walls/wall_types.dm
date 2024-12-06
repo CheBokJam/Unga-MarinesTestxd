@@ -241,6 +241,9 @@
 		to_chat(user, span_warning("[P] can't cut through this!"))
 	return
 
+/turf/closed/wall/indestructible/fire_act(burn_level)
+	return
+
 /turf/closed/wall/indestructible/mineral
 	name = "impenetrable rock"
 	icon_state = "rock_dark"
