@@ -94,7 +94,7 @@
 	if(!(obj_flags & CAN_BE_HIT))
 		return
 
-	return attacking_item.attack_obj(src, user)
+	return W.attack_obj(src, user)
 
 /obj/structure/mineral_door/attacked_by(obj/item/attacking_item, mob/living/user, def_zone)
 	. = ..()
@@ -109,7 +109,7 @@
 		for(var/i in 1 to rand(1,5))
 			new material_type(get_turf(src))
 	return ..()
-	
+
 /obj/structure/mineral_door/get_explosion_resistance()
 	if(CHECK_BITFIELD(resistance_flags, INDESTRUCTIBLE))
 		return EXPLOSION_MAX_POWER
